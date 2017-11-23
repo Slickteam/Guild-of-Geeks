@@ -1,4 +1,4 @@
-package fr.slickteam.decouverte.guildwar.controller;
+package fr.slickteam.decouverte.gog.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

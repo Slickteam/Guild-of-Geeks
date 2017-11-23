@@ -1,4 +1,4 @@
-package fr.slickteam.decouverte.guildwar;
+package fr.slickteam.decouverte.gog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

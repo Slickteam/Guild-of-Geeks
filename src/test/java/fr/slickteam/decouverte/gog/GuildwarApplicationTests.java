@@ -1,4 +1,4 @@
-package fr.slickteam.decouverte.guildwar;
+package fr.slickteam.decouverte.gog;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
