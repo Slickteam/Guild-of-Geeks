@@ -1,17 +1,8 @@
-buildscript {
-	ext {
-		springBootVersion = '1.5.7.RELEASE'
-	}
-	repositories {
-		mavenCentral()
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-	}
+plugins {
+	id 'java'
+	id 'groovy'
+	id 'org.springframework.boot' version '1.5.7.RELEASE'
 }
-
-apply plugin: 'java'
-apply plugin: 'org.springframework.boot'
 
 group = 'fr.slickteam.decouverte'
 version = '0.0.1-SNAPSHOT'
@@ -25,4 +16,5 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+
 }
