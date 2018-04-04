@@ -11,6 +11,7 @@ class AdditionSpeck extends Specification {
         int b = 2
 
         when:
+        int c = a + b
 
         then:
     }
