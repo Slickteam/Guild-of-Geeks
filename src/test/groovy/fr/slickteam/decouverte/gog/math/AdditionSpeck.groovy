@@ -14,5 +14,6 @@ class AdditionSpeck extends Specification {
         int c = a + b
 
         then:
+        c == 7
     }
 }
