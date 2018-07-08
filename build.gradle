@@ -21,4 +21,7 @@ dependencies {
     testCompile ('org.spockframework:spock-core:1.1-groovy-2.4') {
         force =  true
     }
+    testCompile( 'com.athaydes:spock-reports:1.6.0' ) {
+        transitive = false // this avoids affecting your version of Groovy/Spock
+    }
 }
