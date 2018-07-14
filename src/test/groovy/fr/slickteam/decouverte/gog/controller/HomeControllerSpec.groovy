@@ -1,13 +1,10 @@
-package fr.slickteam.decouverte.gog
+package fr.slickteam.decouverte.gog.controller
 
-import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.web.client.TestRestTemplate
-import org.springframework.test.context.junit4.SpringRunner
 import spock.lang.Specification
 
-//@RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class HomeControllerSpec extends Specification {
 
@@ -16,10 +13,12 @@ class HomeControllerSpec extends Specification {
 
     def "return 'hello world' when get hello"(){
 
-        given:
-        when:
+        given: "the application 'guild-of-geeks' is launched"
+
+        when: "I requested the 'hello' API"
         String body = this.restTemplate.getForObject("/hello", String.class)
-        then:
+
+        then: "I should retrieve the content 'Hello World'"
         body == "Hello World"
     }
 }
